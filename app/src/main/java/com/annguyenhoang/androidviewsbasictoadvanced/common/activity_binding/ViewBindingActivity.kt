@@ -22,5 +22,5 @@ abstract class ViewBindingActivity<T : ViewBinding> : AppCompatActivity() {
     }
 
     abstract fun initViews()
-    abstract fun initControls()
+    open fun initControls() = Unit
 }

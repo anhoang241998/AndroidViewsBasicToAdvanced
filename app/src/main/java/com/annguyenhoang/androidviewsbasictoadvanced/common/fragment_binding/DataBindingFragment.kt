@@ -46,7 +46,7 @@ abstract class DataBindingFragment<T : ViewDataBinding> : Fragment() {
         _binding = null
     }
 
-    abstract fun initViews()
-    abstract fun initControls()
+    open fun initViews() = Unit
+    open fun initControls() = Unit
 
 }
